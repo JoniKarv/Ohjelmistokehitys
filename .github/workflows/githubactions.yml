@@ -24,10 +24,10 @@ jobs:
       run: |
         pip3 install coverage
         pip install flake8 pytest
-    - name: Test with pytest
+    - name: Test with pytest and run coverage
       run: |
         pytest
+        coverage run -m pytest
     - name: Coverage report
       run: |
-        coverage run -m pytest
         coverage report
