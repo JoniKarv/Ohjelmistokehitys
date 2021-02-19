@@ -23,6 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip3 install coverage
+        pip install flake8 pytest
     - name: Test with pytest
       run: |
         pytest
