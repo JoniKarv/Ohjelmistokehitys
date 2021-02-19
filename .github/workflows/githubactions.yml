@@ -36,4 +36,4 @@ jobs:
         pytest
     - name: Coverage report
       run: |
-        Coverage report
+        coverage report
